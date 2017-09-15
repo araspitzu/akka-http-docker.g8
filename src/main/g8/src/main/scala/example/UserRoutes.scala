@@ -1,3 +1,5 @@
+package example
+
 //#user-routes-class
 trait UserRoutes extends JsonSupport {
   //#user-routes-class
