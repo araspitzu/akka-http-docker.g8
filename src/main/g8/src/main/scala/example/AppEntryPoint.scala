@@ -23,7 +23,7 @@ object AppEntryPoint extends App with GreetingApi with LazyLogging {
   val bindAddress = config.getString("application.bindAddress")
   val bindPort = config.getInt("application.bindPort")
 
-  logger.info(s"...binding to $bindAddress:$bindPort")
+  logger.info(s"...binding to "+bindAddress+":"+bindPort)
   val serverBindingFuture: Future[ServerBinding] = Http().bindAndHandle(routes, bindAddress, bindPort)
 
 }
