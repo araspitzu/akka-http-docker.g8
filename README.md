@@ -43,3 +43,8 @@ To run the example webserver execute:
 ```
 docker run --rm -p8080:8080 <project_name>:0.0.1
 ```
+
+Check its functioning with:
+```
+curl localhost:8080/hello/your_name
+```
