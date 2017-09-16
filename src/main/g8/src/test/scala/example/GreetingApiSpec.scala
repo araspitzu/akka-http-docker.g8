@@ -23,13 +23,13 @@ class GreetingApiSpec extends Specification with Specs2RouteTest {
 
       val greetingName = "Andrea"
 
-      Get(s"/hello/$greetingName") ~> routes ~> check {
+      Get("/hello/"+greetingName) ~> routes ~> check {
 
         handled === true
         status === (StatusCodes.OK)
         contentType === (ContentTypes.`application/json`)
         val resultGreeting = entityAs[Greeting]
-        resultGreeting.daGreeting === s"Hello $greetingName"
+        resultGreeting.daGreeting === "Hello "+greetingName
 
       }
     }
