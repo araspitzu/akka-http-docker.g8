@@ -44,5 +44,4 @@ lazy val scalariformPref = ScalariformKeys.preferences.value
   .setPreference(AlignSingleLineCaseStatements, true)
   .setPreference(DanglingCloseParenthesis, Preserve)
   .setPreference(CompactStringConcatenation, true)
-  .setPreference(DoubleIndentConstructorArguments, true)
 
