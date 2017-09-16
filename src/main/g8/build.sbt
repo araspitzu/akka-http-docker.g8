@@ -18,7 +18,7 @@ lazy val root = (project in file(".")).
       mainClass in Compile := Some("example.AppEntryPoint"),
       ScalariformKeys.preferences := scalariformPref.value
     )),
-    name := "pp",
+    name := "$name$",
     libraryDependencies ++= Seq(
       "com.typesafe.akka" %% "akka-http"               % akkaHttpVersion,
       "com.typesafe.akka" %% "akka-http-xml"           % akkaHttpVersion,
