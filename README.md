@@ -5,6 +5,16 @@ Prerequisites:
 - sbt 0.13.13 or higher
 - Docker 
 
+Featuring:
+- Latest version of the libraries (akka, scala, spec2 json4s)
+- Json4s library with native backend
+- Spec2 for the test with an example API spec
+- Scalariform formatting according to Scala Style Guide
+- Optimized dockerization using alpine with openjdk8 (image is ~120MB)
+- Slf4j, TypesafeConfig and sbt revolver for code hot reloading
+- Example graylog_gelf configuration (disabled by default)
+
+
 Open a console and run the following command to apply this template:
  ```
 sbt -Dsbt.version=0.13.15 new https://github.com/araspitzu/akka-http-docker.g8
