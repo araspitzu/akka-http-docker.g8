@@ -16,7 +16,6 @@ lazy val root = (project in file(".")).
       scalaVersion    := "$scala_version$",
       version         := "0.0.1",
       mainClass in Compile := Some("example.AppEntryPoint"),
-      dockerBaseImage := "openjdk:8-jre-alpine",
       ScalariformKeys.preferences := scalariformPref.value
     )),
     name := "pp",
@@ -40,6 +39,8 @@ lazy val root = (project in file(".")).
     
     )
   )
+
+dockerBaseImage := "openjdk:8-jre-alpine"
 
 lazy val scalariformPref = Def.setting {
   ScalariformKeys.preferences.value
