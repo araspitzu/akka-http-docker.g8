@@ -22,10 +22,11 @@ To publish the docker image of the template you can `cd` into the `name` folder 
 ```
 sbt docker:publishLocal     
 ```
+the resulting image will have version tag 0.0.1 appended
 
 Verify the image has been published with:
 ```
-docker image
+docker image ls 
 ```
 
 To run the example webserver execute:
