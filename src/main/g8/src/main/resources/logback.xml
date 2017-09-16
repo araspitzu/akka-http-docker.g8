@@ -11,7 +11,7 @@
     <!--appender name="GRAYLOG" class="com.github.pukkaone.gelf.logback.GelfAppender">
         <graylogHost>tcp:GRAYLOG_HOST</graylogHost>
         <graylogPort>12201</graylogPort>
-        <originHost>${HOSTNAME}</originHost>
+        <originHost>HOSTNAME</originHost>
         <levelIncluded>true</levelIncluded>
         <loggerIncluded>true</loggerIncluded>
         <markerIncluded>false</markerIncluded>
