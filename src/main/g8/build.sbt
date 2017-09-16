@@ -16,7 +16,7 @@ lazy val root = (project in file(".")).
       scalaVersion    := "$scala_version$",
       mainClass in Compile := Some("example.AppEntryPoint"),
       dockerBaseImage := "openjdk:8-jre-alpine",
-      ScalariformKeys.preferences := scalariformPref
+      ScalariformKeys.preferences := scalariformPref.value
     )),
     name := "pp",
     libraryDependencies ++= Seq(
@@ -40,8 +40,9 @@ lazy val root = (project in file(".")).
     )
   )
 
-lazy val scalariformPref = ScalariformKeys.preferences.value
-  .setPreference(AlignSingleLineCaseStatements, true)
-  .setPreference(DanglingCloseParenthesis, Preserve)
-  .setPreference(CompactStringConcatenation, true)
-
+lazy val scalariformPref = Def.setting {
+  ScalariformKeys.preferences.value
+    .setPreference(AlignSingleLineCaseStatements, true)
+    .setPreference(DanglingCloseParenthesis, Preserve)
+    .setPreference(CompactStringConcatenation, true)
+}
