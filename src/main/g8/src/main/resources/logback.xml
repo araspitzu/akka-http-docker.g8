@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d [%logger{1}] %5p - %m%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <!--appender name="GRAYLOG" class="com.github.pukkaone.gelf.logback.GelfAppender">
+        <graylogHost>tcp:GRAYLOG_HOST</graylogHost>
+        <graylogPort>12201</graylogPort>
+        <originHost>${HOSTNAME}</originHost>
+        <levelIncluded>true</levelIncluded>
+        <loggerIncluded>true</loggerIncluded>
+        <markerIncluded>false</markerIncluded>
+        <threadIncluded>false</threadIncluded>
+        <facility>gelf-java</facility>
+        <additionalField>application=organizationName</additionalField>
+    </appender-->
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+
+</configuration>
