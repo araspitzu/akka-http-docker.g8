@@ -14,6 +14,7 @@ lazy val root = (project in file(".")).
     inThisBuild(List(
       organization    := "$organization$",
       scalaVersion    := "$scala_version$",
+      version         := "0.0.1",
       mainClass in Compile := Some("example.AppEntryPoint"),
       dockerBaseImage := "openjdk:8-jre-alpine",
       ScalariformKeys.preferences := scalariformPref.value
