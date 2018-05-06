@@ -17,7 +17,7 @@ Featuring:
 
 Open a console and run the following command to apply this template:
  ```
-sbt -Dsbt.version=0.13.15 new https://github.com/araspitzu/akka-http-docker.g8
+sbt -Dsbt.version=1.1.1 new https://github.com/araspitzu/akka-http-docker.g8
  ```
 
 This template will prompt for the following parameters. Press `Enter` if the default values suit you:
