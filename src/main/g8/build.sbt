@@ -34,7 +34,7 @@ lazy val root = (project in file(".")).
       "org.specs2"        %% "specs2-matcher-extra"    % "3.8.6" % Test,
       "com.typesafe.akka" %% "akka-http-testkit"       % akkaHttpVersion % Test,
       
-      "ch.qos.logback"    %  "logback-classic"         % "1.1.2",
+      "ch.qos.logback"    %  "logback-classic"         % "1.2.3",
       "com.typesafe.scala-logging" %% "scala-logging"  % "3.5.+"
     
     )

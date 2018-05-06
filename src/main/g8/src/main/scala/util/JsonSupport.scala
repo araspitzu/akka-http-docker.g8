@@ -15,7 +15,7 @@ trait JsonSupport extends Json4sSupport {
   case object LocalDateTimeSerializer extends CustomSerializer[LocalDateTime](format => (
     {
       case JString(p) => LocalDateTime.parse(p)
-      case JNull => null
+      case JNull      => null
     },
     {
       case date: LocalDateTime => JString(date.toString)
