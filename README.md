@@ -2,7 +2,7 @@ A [Giter8][g8] template for Akka HTTP in a docker image
 
 Prerequisites:
 - JDK 8
-- sbt 0.13.13 or higher
+- sbt 1.1.1 or higher
 - Docker 
 
 Featuring:
