@@ -30,7 +30,7 @@ This template will prompt for the following parameters. Press `Enter` if the def
 
 To publish the docker image of the template you can `cd` into the `name` folder and run 
 ```
-sbt docker:publishLocal     
+docker build -t your_project_name .    
 ```
 the resulting image will have version tag 0.0.1 appended
 
