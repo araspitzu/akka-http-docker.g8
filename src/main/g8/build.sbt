@@ -2,8 +2,6 @@ import com.typesafe.sbt.SbtScalariform.ScalariformKeys
 import scalariform.formatter.preferences._
 
 enablePlugins(JavaAppPackaging)
-enablePlugins(DockerPlugin)
-enablePlugins(AshScriptPlugin)
 
 lazy val akkaHttpVersion = "$akka_http_version$"
 lazy val akkaVersion    = "$akka_version$"
@@ -39,8 +37,6 @@ lazy val root = (project in file(".")).
     
     )
   )
-
-dockerBaseImage := "openjdk:8-jre-alpine"
 
 lazy val scalariformPref = Def.setting {
   ScalariformKeys.preferences.value
